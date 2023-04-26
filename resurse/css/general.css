@@ -1,0 +1,251 @@
+html{
+    font-size:18px;
+}
+header{
+  background-color: var(--rosu-inchis);
+  color:var(--roz);
+  width:calc(100vw - 18px);
+  top:0;
+  margin-left: calc(-1 * var(--spatiere-pagina));
+}
+/*paleta*/
+body{
+    --rosu-inchis:rgb(89,2,18);
+    --mov-deschis:rgb(123, 103, 196);
+    --mov-inchis:rgb(24, 18, 45);
+    --roz:rgb(232, 203, 229);
+    --negru-ish:rgb(5, 5, 5);
+    --culoare-fundal:var(--roz);
+    --culoare-fundal-inchis:#C886FF;
+    --culoare-text:var(--negru-ish);
+    --spatiere-pagina:50px;
+    --padding-sectiune:15px;
+}
+
+body.dark{
+    --culoare-fundal:black;
+    --culoare-text:white;
+}
+
+#sigla {
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+}
+  
+body{
+    background-color: var(--culoare-fundal);
+    color:var(--culoare-text);
+    padding-left:var(--spatiere-pagina);
+    padding-right:var(--spatiere-pagina);
+    min-width:450px;
+    margin:0;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+
+h2{
+    font-size: 2rem;
+    padding: 3px;
+}
+h3{
+  font-size: 1.7rem;
+  padding: 3px;
+}
+
+#grid-pagina > *{
+    border: 3px solid var(--rosu-inchis);
+    padding:var(--padding-sectiune);
+    box-sizing: border-box;
+    border-radius: 10px; 
+}
+#grid-pagina{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:"z-welcome z-welcome z-welcome z-welcome"
+                        "z-tabel z-tabel z-calendar z-calendar"
+                        "z-tabel z-tabel z-anunturi z-anunturi"
+                        "z-dateon z-dateuser z-dateuser z-dateserv"
+                        "z-extra z-extra z-extra z-extra"
+                        ;
+   gap:20px 10px;
+    
+}
+
+#welcome{
+    grid-area: z-welcome;
+}
+#tabel{
+    grid-area: z-tabel;
+}
+#bestsellers{
+    grid-area: z-calendar;
+}
+
+#oferte{
+    grid-area: z-anunturi;
+}
+
+#dateon{
+    grid-area: z-dateon;
+}
+#dateuser{
+    grid-area: z-dateuser;
+}
+#dateserv{
+    grid-area: z-dateserv;
+}
+
+#extra{
+    grid-area: z-extra;
+}
+
+
+
+img{
+    width:100%;
+    max-width:700px;
+}
+
+
+video{
+  width:100%;
+  max-width:700px;
+}
+
+main{
+    margin-top:100px;
+}
+footer img {
+    width: 180px;
+    height: 45px;
+    margin:10px;
+}
+
+
+/*link top*/
+.link-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:var(--rosu-inchis);
+  overflow: hidden;
+  color: var(--roz);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+  
+}
+
+.triunghi {
+  display: inline-block;
+  position: fixed;
+  transform: translate(12px, 2px);
+  font-size: 50px;
+  width: 10px;
+  height: 10px;
+}
+ 
+.link-top:hover {
+  background-color: var(--roz);
+  opacity: 1;
+  color:var(--mov-inchis);
+  transition: all 0.2s linear;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  border:1.5px solid var(--mov-inchis);
+}
+
+   
+  .tab {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s linear;
+  }
+  .iframe iframe{
+    border:4px solid black;
+  }
+  .tab-link {
+    margin: 3px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1px;
+    border-radius: 3px;
+    background-color: var(--mov-deschis);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left:20px;
+    border:2px solid black;
+    overflow: hidden;
+  }
+  .tab-link a {
+    text-decoration: none;
+    color:black;
+  }
+  .tab-link:hover {
+    background-color: var(--mov-inchis);
+    
+   
+  }
+  .tab-link:hover a{
+    color: white;
+  }
+
+  
+/*stilizare tabel*/
+#tab-cristale {
+    border-collapse: collapse;
+    border: 5px inset white;
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  #tab-cristale th,
+  #tab-cristale td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+  }
+  #tab-cristale th {
+    background-color: var(--mov-deschis);
+  }
+  #tab-cristale tbody tr:nth-child(even) {
+    background-color: var(--mov-deschis);
+    color: black;
+}
+
+#tab-cristale tbody tr:nth-child(odd) {
+    background-color: var(--mov-inchis);
+    color: white;
+}
+
+
+  #tab-cristale tbody tr:hover {
+    outline: 5px solid rgba(43, 6, 36, 0.7);
+    transition: outline 0.2s;
+  }
+
+
+  .table-container{
+    box-sizing: border-box;
+  }
+  .table-container p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+  }
+  

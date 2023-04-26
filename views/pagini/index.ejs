@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Magazin Silver Spirit</title>
+        <meta name="keywords" content="cristale, spiritualitate, produse, tarot cards, zodii, betisoare parfumate, bijuterii, reducere, oferta,2+1 gratis, dragoste, iubire">
+        <meta name="description" content="Magazin dedicat spiritualității. Cristale, carți de tarot, lumânări, bijuterii.">
+        <%- include("../fragmente/head.ejs") %>
+       
+    </head>
+    <body>
+        <%- include("../fragmente/header.ejs") %>
+        <main>
+            <div id="grid-pagina">
+            <section id="welcome">
+                <h2>Bine ați venit!</h2>
+                <p>Magazinul Silver Spirit este un magazin dedicat atât persoanelor care vor sa își practice credința într-un fel unic, cât și celor care își doresc bijuterii și decorațiuni deosebite, in stilul <i lang="en" >goth</i> și <a href="https://ro.wikipedia.org/wiki/Wicca" target="_blank" title="Ce este Wicca..."><i lang="en" >Wicca</i></a>.</p> 
+                <p><em>Silver Spirit oferă acces nelimitat la obiecte de ritual, la îndemâna oricui.</em></p>
+                <p><strong>Cumpără acum uneltele necesare pentru a-ți debloca puterea eului!</strong></p>  
+                <div id="selectie">
+                    <h2>Selecție de produse</h2>
+                    <p style="font-weight:bold;">Oferim o varietate de produse cu rol atât estetic, cât și spiritual:</p>
+                    <ul>
+                        <li>Lumânări parfumate, colorate</li>
+                        <li>Bețisoare parfumate pentru <dfn><i lang="en" >cleansing</i></dfn> (curățarea de energii negative a propriei persoane, a casei, a obiectelor de ritual, etc)</li>
+                        <li>Cărți de tarot</li>
+                        <li>Ghiduri pentru începători</li>
+                        <li>Cristale</li>
+                        <li>Decorațiuni:
+                            <ul>
+                                <li>Statuete</li>
+                                <li>Oglinzi</li>
+                                <li>Tablouri</li>
+                                <li>Ustensile</li>
+                            </ul></li>
+                        <li>Bijuterii:
+                            <ul>
+                                <li>Pandantive</li>
+                                <li>Brățări</li>
+                                <li>Inele</li>
+                            </ul></li>
+                        <li>Și multe altele!</li>
+                    </ul>
+                </div>
+            </section>
+          
+            <section id="tabel">
+                <h2>Cristalele din selecția noastră</h2>
+                <div class="table-container">
+                    <table id="tab-cristale">
+                        <thead>
+                            <tr>
+                                <th>Denumire</th>
+                                <th>Culoare</th>
+                                <th>Fragilitate</th>
+                                <th>Formă cristalizare</th>
+                                <th>Toxicitate</th>
+                                <th>Proprietăți</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ametist</td>
+                                <td>Mov</td>
+                                <td>Relativ durabil, sensibil la schimbări de temperatură</td>
+                                <td>Triagonal</td>
+                                <td>Scăzută</td>
+                                <td>Putere vindecătoare si purificatoare</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Quartz</td>
+                                <td>Roz</td>
+                                <td>Durabil</td>
+                                <td>Triagonal/Hexagonal</td>
+                                <td>Scăzută</td>
+                                <td>Este considerat cristalul iubirii</td>
+                            </tr>
+                            <tr>
+                                <td>Transparent</td>
+                                <td>Durabil</td>
+                                <td>Triagonal/Hexagonal</td>
+                                <td>Scăzută</td>
+                                <td>Folosit pentru amplificarea energiei și a puterii gândurilor</td>
+                            </tr>
+                            <tr>
+                                <td>Negru</td>
+                                <td>Durabil</td>
+                                <td>Triagonal/Hexagonal</td>
+                                <td>Scăzută</td>
+                                <td>Este considerat cristalul protecției și al înțelepciunii</td>
+                            </tr>
+                            <tr>
+                                <td>Malachit</td>
+                                <td>Verde</td>
+                                <td>Fragil, ușor de zgâriat</td>
+                                <td>Monoclinic</td>
+                                <td>Toxic dacă este diluat în apa sau ingerat (conținut ridicat de cupru)</td>
+                                <td>Vindecă și absoarbe durerea emoțională</td>
+                            </tr>
+                            <tr>
+                                <td>Obsidian</td>
+                                <td>Negru</td>
+                                <td>Foarte durabil</td>
+                                <td>Amorf (Rocă vulcanică)</td>
+                                <td>Scăzută</td>
+                                <td>Curăță mintea și aura, arătând atât defectele, cât și calitățile purtătorului</td>
+                            </tr>
+                            <tr>
+                                <td>Jade</td>
+                                <td>Verde</td>
+                                <td>Foarte durabil</td>
+                                <td>Monoclinic</td>
+                                <td>Scăzută</td>
+                                <td>Aducător de noroc</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                        <caption>Informații despre cele mai utilizate cristale.</caption>
+                    </table>
+                </div>
+                <section>
+                    <section>
+                        <video id="videoclip" controls poster="./resurse/imagini/poster.png"  preload="auto">
+                            <source src="./resurse/imagini/video-estetic.mp4" type="video/mp4">
+                            <source src="/resurse/imagini/video-estetic.webm" type="video/webm">
+                            <track default src="/resurse/tracks/sub_ro.vtt" kind="captions" srclang="ro" label="romana"/>
+                            <track src="/resurse/tracks/sub_en.vtt" kind="captions" srclang="en" label="engleza"/>
+                        </video>
+                    </section>                    
+                </section>
+            </section>
+            <section id="bestsellers">
+                    <h3>Bestsellers</h3>
+                    <section>
+                    <p>Prin cele mai cumpărate produse ale noastre se află:</p>
+                    <p><b>Cărți de tarot</b></p>
+                    <p>Folosite atât pentru jocuri de cărți, cât și pentru divinație, <b>cărțile de tarot</b> pot oferi cititorului informații despre trecut, prezent și viitor.</p>
+                    <p><strong>Se recomandă utilizarea împreună cu un ghid, din gama noastră largă, pentru cele mai bune rezultate.</strong></p>
+                    <p><b>Oferta</b> Cărți Tarot + Ghid Divinație are o reducere de <span><s>20%</s><ins style="text-decoration:none;"> 25%</ins></span>.</p>
+                    <figure>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="./resurse/imagini/tarot-small.jpg">
+                        <source media="(max-width: 1000px)" srcset="./resurse/imagini/tarot-medium.jpg">
+                        <img src="./resurse/imagini/tarot-big.jpg" alt="tarot" title="Cărți de tarot">
+                    </picture>
+                    <figcaption>Cărți de tarot clasice Rider-Waite</figcaption>
+                    </figure>
+                    <p><b>Cristale</b></p>
+                    <p>Cristalele au rol decorativ, estetic, dar și terapeutic, considerându-se că ar fi încărcate cu energii legate de <b>zodii</b>, <b>chakre</b>, sănătate, protecție, <b>dragoste</b>, prosperitate și noroc.</p>
+                    <p>Silver Spirit oferă atât cristale mari, decorative, cât și de mărimi mai mici, de buzunar, dar și <b>bijuterii</b> din cristal.</p>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="./resurse/imagini/cristale-small.jpg">
+                            <source media="(max-width: 1000px)" srcset="./resurse/imagini/cristale-medium.jpg">
+                            <img src="./resurse/imagini/cristale-big.jpg" alt="tarot" title="Cristale">
+                        </picture>
+                        <figcaption>Diferite tipuri de cristale</figcaption>
+                    </figure>
+                    </section>
+                    <section>
+                    <div id="grid-galerie">
+                        <% for (let imag of locals.imagini) { 
+                            d=new Date();
+                            var v_luni=["ianuarie", "februarie", "martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
+                            if(imag.luni && imag.luni.includes(v_luni[d.getMonth()])){
+                            %>
+                           
+                                <figure>
+                                    <picture>
+                                        <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                        <img src="<%- imag.fisier %>" alt="imagine">
+                                    </picture>
+                                    <figcaption><%- imag.descriere %></figcaption>
+                                </figure>
+                    
+                    
+                        <% }  %>
+                        <% }  %>
+                    </div>
+                    </section>
+            </section>
+
+            <section id="oferte">
+                <h2>Oferte</h2>
+                <p><strong>Nu rata cele mai noi oferte!</strong></p>
+                <ol>
+                    <li>Cărți Tarot + Ghid Divinație - 25% <b>reducere</b></li>
+                    <li>Set la alegere: Inel + Brățară + Pandantiv la un <b>preț special</b></li>
+                    <li><b>Reducere</b> Quartz roz - Cristalul iubirii</li>
+                    <li>Bețisoare parfumate - <b>2+1 gratis</b>. Este important să ții departe energiile negative înainte de un ritual, dar și zi de zi.</li>
+                </ol>
+            </section>
+            <section id="dateon">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat voluptatum eveniet reiciendis non ab modi eos quasi ducimus sint. Dolorum et quos unde explicabo sequi rem maxime ducimus eius.</p>
+            </section>
+            <section id="dateuser">
+                <p>
+                    Ip: <%- locals.ip %>
+                </p>
+            </section>
+            <section id="dateserv">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat voluptatum eveniet reiciendis non ab modi eos quasi ducimus sint. Dolorum et quos unde explicabo sequi rem maxime ducimus eius.</p>
+            </section>
+            <section id="extra"> 
+                <h2>Câteva linkuri extra</h2>
+                <p>Deși o carte de specialitate oferă cele mai multe detalii, am atașat videoclipuri pentru începători, cu cateva tipuri de citiri de bază și semnificațiile fiecărei cărți.</p>
+                <div class="iframe">
+                <div class="tab">
+                    <div class="tab-link">
+                        <a href="https://www.youtube.com/embed/kFT1uiWZixg" target="ifr-video">Citiri de bază</a>
+                      </div>
+                      <div class="tab-link">
+                        <a href="https://www.youtube.com/embed/vP4U8uhWmrY" target="ifr-video">Semnificația cărților</a>
+                      </div>
+                      <div class="tab-link">
+                        <a href="https://www.youtube.com/embed/vhCbP1MTVzY" target="ifr-video">Ghid pentru începători</a>
+                    </div>
+                </div>
+                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/vhCbP1MTVzY" title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>Un ghid pentru setul clasic de cărți de tarot Rider-Waite poate fi descărcat de aici: <a href="https://www.academia.edu/42036859/RIDER_WAITE_TAROT_DECK " target="_blank" download="https://www.academia.edu/42036859/RIDER_WAITE_TAROT_DECK">Cărți-de-tarot-Rider-Waite.pdf</a></p><br>
+                </div>
+            </section>
+        </div>
+        </main> 
+        <%- include("../fragmente/footer.ejs") %>
+
+    </body>
+</html>

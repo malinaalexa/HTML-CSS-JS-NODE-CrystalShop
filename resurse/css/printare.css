@@ -1,0 +1,115 @@
+
+@media print {
+
+    img, iframe, .iframe, .tab{
+        display: none;
+    }
+    #grid-pagina{
+        display: block;
+        grid-gap: 20px;
+    }
+
+    #grid-pagina>*{
+        border: 3px solid black;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    h1{
+		margin: 20%;
+		text-align:center;
+		margin-left:0cm;
+	}
+    ul.meniu{
+        display: list-item;
+		border:none;
+        page-break-after: always;
+    }
+    ul.meniu li{
+        display: list-item;
+		border:none;
+    }
+    footer{
+        page-break-before: always;
+    }
+
+    thead th, tbody td, tfoot td {
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+
+    }
+	.table-container{
+		overflow-x: visible;
+		width: auto;
+	}
+	#banner {
+		position: absolute;
+		display: block;
+		text-align: center;
+		width: calc((100% - 100px) / 2);
+		top: 0;
+		right: 0;
+		margin:20px;
+		overflow: visible;
+		border: 4px inset black;
+	  }
+	   
+	#watermark
+		{	
+		display: block;
+		position: fixed;
+		bottom:0;
+		color:rgb(0, 0, 0);
+		right:0;
+		opacity:0.3;
+		padding:5px;
+        text-align:center;
+        font-weight: bold;
+		width: calc(60vw - 10px);
+		height: calc(10vw - 10px);
+		background: white;
+		border:3px double black;
+		border-radius:10px;
+	}
+
+
+body,h1,h2,h3,h4{
+    background-color: white;
+    color: black;
+}
+
+
+ul.meniu li a:hover{
+    box-shadow:none;
+    transition: none;
+}
+
+tr:hover {
+    box-shadow: none;
+    transition: none;
+  }
+.link-top{
+	display: none;
+}
+
+@page {
+	size: A4 portrait;
+	margin-bottom:2cm;
+	margin-top:2cm;
+	counter-increment: page;
+		
+}
+@page:left{
+
+	margin-left:2cm;
+	margin-right:1cm;
+}
+@page:right{
+
+	margin-right:2cm;
+	margin-left:1cm;
+}
+}
